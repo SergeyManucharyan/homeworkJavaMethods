@@ -157,7 +157,14 @@ public class StringMethods {
      * @return return uppercase string
      */
     public String upperCase(String str) {
-        StringBuilder sb = new StringBuilder(str.toUpperCase());
+        StringBuilder sb = new StringBuilder();
+        for(int i=0;i<str.length();i++){
+            if(str.charAt(i)>=97&&str.charAt(i)<=122){
+                sb.append((char)(str.charAt(i)-32));
+            }else{
+                sb.append(str.charAt(i));
+            }
+        }
         return sb.toString();
     }
 

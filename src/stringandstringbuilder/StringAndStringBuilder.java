@@ -36,5 +36,6 @@ public class StringAndStringBuilder {
         System.out.println(str.subStringStringBuilder(st,1));
         str.isNullOrEmpty("");
         str.largestSubstring("We, are, living, in an, yellow, submarine, We don't, have anything");
+        System.out.println((int)('A'));
     }
 }
