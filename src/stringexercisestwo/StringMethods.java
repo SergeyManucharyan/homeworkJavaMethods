@@ -9,11 +9,14 @@ public class StringMethods {
      * @return string first two character
      */
     public String firstTwoChar(String s) {
-        if (s.length() < 2) {
-            return "String is so short";
-        } else {
-            return s.substring(0, 2);
+        if (s.charAt(0)=='o') {
+            if (s.charAt(1) == 'z') {
+                return (s.substring(0, 2));
+            } else {
+                return (s.charAt(0)+"");
+            }
         }
+        return "String is so short";
     }
 
     /**
@@ -72,7 +75,7 @@ public class StringMethods {
             if (num % 2 == 0) {
                 list.add("e" + num);
             } else {
-                list.add("o" + num);
+                list.add("o" + num+',');
             }
         }
         return list;
@@ -125,7 +128,6 @@ public class StringMethods {
     }
 
     public String largestPalindrome(String s) {
-        StringMethods stringMethods = new StringMethods();
         String pol = "";
         String[] words = s.split(" ");
         for (int i = 0; i < words.length; i++) {
