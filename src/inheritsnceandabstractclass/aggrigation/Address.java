@@ -1,18 +1,9 @@
-package inheritsnceandabstractclass.aggrigation.employee;
+package inheritsnceandabstractclass.aggrigation;
 
 public class Address {
-    private int num;
+    public int num;
     private  String street;
-    private int zip;
-
-    public Address() {
-    }
-
-    public Address(int num, String street, int zip) {
-        this.num = num;
-        this.street = street;
-        this.zip = zip;
-    }
+    private String zip;
 
     public int getNum() {
         return num;
@@ -30,11 +21,17 @@ public class Address {
         this.street = street;
     }
 
-    public int getZip() {
+    public String getZip() {
         return zip;
     }
 
-    public void setZip(int zip) {
+    public void setZip(String zip) {
+        this.zip = zip;
+    }
+
+    public Address(int num, String street, String zip) {
+        this.num = num;
+        this.street = street;
         this.zip = zip;
     }
 }

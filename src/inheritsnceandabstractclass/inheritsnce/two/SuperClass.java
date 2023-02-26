@@ -1,4 +1,4 @@
-package inheritsnceandabstractclass.inheritsnce;
+package inheritsnceandabstractclass.inheritsnce.two;
 
 public class SuperClass {
     public SuperClass(){}

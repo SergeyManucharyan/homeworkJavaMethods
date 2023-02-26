@@ -19,7 +19,6 @@ public class StringExercisesTwo {
         System.out.println(strMethods.oddOrEven(numbers));
         System.out.println(strMethods.cezarDecoder("Ofaf nx ymj gjxy uwtlwfrnsl qfslzflj jajw"));
         System.out.println(strMethods.cezarCoder("Hello"));
-        System.out.println(strMethods.largestPalindrome("fghth abcdcba, fghh sbs hgh. looooooool."));
         System.out.println(strMethods.commonSubSequence("Given two strings write a method that finds the longest common sub-sequence."
                                                         ,"Given two stringsf write a method that finds the longestt common subsequence."));
         System.out.println(strMethods.commonCharCount("faarteegsj","daatyteep"));

@@ -1,4 +1,4 @@
-package inheritsnceandabstractclass.inheritsnce;
+package inheritsnceandabstractclass.inheritsnce.one;
 
 public class Parent {
     public void showMessage(){

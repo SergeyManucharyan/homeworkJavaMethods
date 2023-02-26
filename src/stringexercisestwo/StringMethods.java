@@ -59,6 +59,12 @@ public class StringMethods {
         return sb.toString().equals(str);
     }
 
+    /**
+     *
+     * @param list of string
+     * @return returns a list of all strings that start with the letter 'a'
+     * (lower case) and have exactly 3 letters
+     */
     public ArrayList<String> aThreeChar(ArrayList<String> list) {
         ArrayList<String> filteredList = new ArrayList<>();
         for (String s : list) {
@@ -69,6 +75,13 @@ public class StringMethods {
         return filteredList;
     }
 
+    /**
+     *
+     * @param list of numbers
+     * @return Each element should be preceded by the letter 'e' if the number
+     * is even, and preceded by the letter 'o' if the number is odd. For example, if
+     * the input list is (3,44), the output should be 'o3,e44'
+     */
     public ArrayList<String> oddOrEven(ArrayList<Integer> numbers) {
         ArrayList<String> list = new ArrayList<>();
         for (Integer num : numbers) {
@@ -81,6 +94,15 @@ public class StringMethods {
         return list;
     }
 
+    /**
+     *Caesar used to communicate securely with his generals.
+     * Each letter is replaced by another letter N positions down in
+     * English alphabet. For example, to rotate by 5, the letter "c" would be
+     * changed to "h". In the case of "z", the alphabet is rotated and it turns into
+     * "d". Implement a decoder for a Caesar cipher where N = 5
+     * @param str encrypted code string
+     * @return decrypted string
+     */
     public String cezarDecoder(String str) {
         StringBuilder sb = new StringBuilder();
         char[] chars = str.toCharArray();
@@ -104,6 +126,11 @@ public class StringMethods {
         return sb.toString();
     }
 
+    /**
+     *
+     * @param str decrypted string
+     * @return encrypted string
+     */
     public String cezarCoder(String str) {
         StringBuilder sb = new StringBuilder();
         char[] chars = str.toCharArray();
@@ -125,29 +152,6 @@ public class StringMethods {
             }
         }
         return sb.toString();
-    }
-
-    public String largestPalindrome(String s) {
-        String pol = "";
-        String[] words = s.split(" ");
-        for (int i = 0; i < words.length; i++) {
-            int lastChar = words[i].charAt(words[i].length() - 1);
-            if (lastChar < 65 || lastChar > 90 && lastChar < 97 || lastChar > 122) {
-                words[i] = words[i].substring(0, words[i].length() - 1);
-            }
-        }
-        for (String w : words) {
-            if (isPalindrome(w)) {
-                if (w.length() > pol.length()) {
-                    pol = w;
-                }
-            }
-        }
-        if (pol.length() == 0) {
-            return "Palindrome words not found";
-        }
-
-        return pol;
     }
 
     /**
@@ -177,6 +181,13 @@ public class StringMethods {
         }
         return result.toString();
     }
+
+    /**
+     *
+     * @param sOne String
+     * @param sTwo String
+     * @return   number of common characters
+     */
     public int commonCharCount(String sOne,String sTwo){
         StringBuilder sbOne = new StringBuilder();
         StringBuilder sbTwo = new StringBuilder();
@@ -198,6 +209,12 @@ public class StringMethods {
         }
         return count;
     }
+
+    /**
+     * check parentheses
+     * @param s string
+     * @return true if parentheses in legal position
+     */
     public static boolean checkParentheses(String s){
         char[] chars=s.toCharArray();
         int openParentheses=0,closeParentheses=0;
@@ -212,6 +229,13 @@ public class StringMethods {
         }
         return true;
     }
+
+    /**
+     *Write a function that reverses characters in (possibly nested) parentheses in
+     *   the input string. Input strings will always be well-formed with matching ()s
+     * @param s string
+     * @return reversed String
+     */
     public String possiblyNestedRevers(String s){
         StringBuilder sb=new StringBuilder();
         if(!checkParentheses(s)){
