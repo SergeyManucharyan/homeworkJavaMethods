@@ -1,7 +1,12 @@
 package enumexercise.data;
 
+/**
+ * Create a Java enum called Unit that represents the following units of measure: METER, KILOGRAM, SECOND, AMPERE, KELVIN, MOLE, and CANDELA.
+ * Each unit should have a method called getBaseUnit() that returns the base unit of measure (either itself, or the unit it is derived from).
+ * For example, the base unit of measure for KILOGRAM is itself, but the base unit of measure for NEWTON (a derived unit) is KILOGRAM * METER / SECOND^2.
+ */
 public enum Unit {
-    METER{
+    METER {
         @Override
         public String getBaseUnit() {
             return null;
@@ -22,13 +27,13 @@ public enum Unit {
     CELSIUS {
         @Override
         public String getBaseUnit() {
-            return CELSIUS+" = "+ KELVIN+" + 273,15";
+            return CELSIUS + " = " + KELVIN + " + 273,15";
         }
     },
     KELVIN {
         @Override
         public String getBaseUnit() {
-            return KELVIN+" = "+ CELSIUS+" - 273,15";
+            return KELVIN + " = " + CELSIUS + " - 273,15";
         }
     },
     MOLE {
@@ -46,8 +51,9 @@ public enum Unit {
     NEWTON {
         @Override
         public String getBaseUnit() {
-            return NEWTON+" = "+KILOGRAM+" * "+METER+" / "+SECOND+" ^ "+2;
+            return NEWTON + " = " + KILOGRAM + " * " + METER + " / " + SECOND + " ^ " + 2;
         }
     };
+
     public abstract String getBaseUnit();
 }

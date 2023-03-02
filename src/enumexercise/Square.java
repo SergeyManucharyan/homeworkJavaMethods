@@ -1,7 +1,7 @@
 package enumexercise;
 
-public class Square extends Shape{
-    private  double sideA;
+public class Square extends Shape {
+    private double sideA;
 
     public void setSide(double sideA) {
         this.sideA = sideA;
@@ -9,11 +9,11 @@ public class Square extends Shape{
 
     @Override
     public double getArea() {
-        return sideA*sideA;
+        return sideA * sideA;
     }
 
     @Override
     public double getPerimeter() {
-        return 4*sideA;
+        return 4 * sideA;
     }
 }
