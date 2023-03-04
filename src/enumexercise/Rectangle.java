@@ -1,5 +1,8 @@
 package enumexercise;
 
+/**
+ * calculate perimeter end area for rectangle by the given sides
+ */
 public class Rectangle extends Shape {
     private double sideA;
     private double sideB;

@@ -1,5 +1,8 @@
 package enumexercise;
 
+/**
+ * calculate perimeter end area for square by the given side
+ */
 public class Square extends Shape {
     private double sideA;
 
@@ -17,3 +20,10 @@ public class Square extends Shape {
         return 4 * sideA;
     }
 }
+
+
+
+
+
+
+

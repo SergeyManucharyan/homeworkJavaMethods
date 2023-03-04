@@ -1,5 +1,9 @@
 package enumexercise;
 
+/**
+ * calculate perimeter end area for circle by the given radius
+ */
+
 public class Circle extends Shape {
     private double radius;
 

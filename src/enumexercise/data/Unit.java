@@ -9,7 +9,7 @@ public enum Unit {
     METER {
         @Override
         public String getBaseUnit() {
-            return null;
+            return METER.toString();
         }
     },
     KILOGRAM {
