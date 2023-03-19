@@ -1,4 +1,5 @@
 .idea
 /out
 *.iml
-src/archive
+src/main/java/archive
+/target

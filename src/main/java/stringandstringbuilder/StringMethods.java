@@ -10,8 +10,8 @@ public class StringMethods {
      * @param strTwo string
      *               print concatenated string with input parameters
      */
-    public void stringConcat(String strOne, String strTwo) {
-        System.out.println(strOne + strTwo);
+    public String stringConcat(String strOne, String strTwo) {
+        return strOne + strTwo;
     }
 
     /**
@@ -319,15 +319,17 @@ public class StringMethods {
      *          checks whether the given String parameter is empty and not null
      */
 
-    public void isNullOrEmpty(String s) {
+    public boolean isNullOrEmpty(String s) {
         if (s == null) {
             System.out.println("String is null");
+            return  true;
         } else if (s.length() > 0) {
             System.out.println("String is neither null nor empty");
+            return false;
         } else {
             System.out.println("String is empty");
+            return true;
         }
-        System.out.println();
     }
 //    13. Գրել method, որը տրոհում է նախադսությունը ըստ  ‘,’   և գտում ամեներկար բառը ․
 

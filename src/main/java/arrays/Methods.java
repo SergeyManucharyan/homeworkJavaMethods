@@ -6,7 +6,7 @@ public class Methods {
 
     /**
      *
-     * @param  array of integers
+     * @param  n array of integers
      *          print positive elements of array
      *
      */
@@ -22,7 +22,7 @@ public class Methods {
 
     /**
      *
-     * @param array of short
+     * @param s array of short
      * @return reversed array
      */
     public short[] revers(short... s) {
@@ -37,7 +37,7 @@ public class Methods {
 
     /**
      *
-     * @param array of long
+     * @param l array of long
      * @return maximum value of elements
      */
     public long maxValue(long... l) {
@@ -54,7 +54,7 @@ public class Methods {
 
     /**
      *
-     * @param array of float
+     * @param f array of float
      * @return minimum value of array
      */
     public float minValue(float... f) {
@@ -72,7 +72,7 @@ public class Methods {
 
     /**
      *
-     * @param  array of integer
+     * @param  n array of integer
      * @return moves n array elements into m array.
      */
     public int[] arrayMove(int... n) {
@@ -88,8 +88,8 @@ public class Methods {
 
     /**
      *
-     * @param  first array of integer
-     * @param  second array of integer
+     * @param  arr1 first array of integer
+     * @param arr2 second array of integer
      * @return sums the elements of two arrays
      * and puts it in the third array
      */
@@ -105,8 +105,8 @@ public class Methods {
 
     /**
      *
-     * @param array of integer
-     * @param integer number
+     * @param arr array of integer
+     * @param k integer number
      * @return how many times the number k was found in the elements of the array.
      */
     public int howManyTimes( int k,int... arr) {
@@ -122,7 +122,7 @@ public class Methods {
 
     /**
      *
-     * @param array of integer
+     * @param arr array of integer
      *              print non-repeating triads
      */
     public void nonRepeatTriad(int... arr) {
@@ -141,7 +141,7 @@ public class Methods {
 
     /**
      *
-     * @param array of integer
+     * @param arr array of integer
      * @return descending array
      */
     public int[] exerciseNine(int... arr) {
@@ -162,7 +162,7 @@ public class Methods {
 
     /**
      *
-     * @param array of numbers
+     * @param arr array of numbers
      * @return array with odd elements at the end
      */
     public int[] oddAtTheEnd(int... arr) {
@@ -182,7 +182,7 @@ public class Methods {
 
     /**
      *
-     * @param array of numbers
+     * @param arr array of numbers
      * @return array without zeros
      */
     public int[] removeZero(int... arr) {
@@ -206,7 +206,7 @@ public class Methods {
 
     /**
      *
-     * @param array of numbers
+     * @param arr array of numbers
      *              print largest ascending sequence
      */
     public void largestSequence(int... arr){
@@ -238,10 +238,10 @@ public class Methods {
 
     /***
      *
-     * @param string binary number
+     * @param st string binary number
      *               print decimal number
      */
-    public void toDecimal(String st){
+    public int toDecimal(String st){
         int result=0;
         int[] numArr=new int[st.length()];
         boolean bool =true;
@@ -255,10 +255,11 @@ public class Methods {
             result+=numArr[numArr.length-1-i]*(Math.pow(2,i));
         }
         if(bool) {
-            System.out.print(result);
+            return result;
         }else{
             System.out.print("Wrong input");
         }
+        return 0;
     }
      //14  Տպել տրված մատրիցի գլխավորա անկյունագծից վերեւ բոլոր տարերը:
     /**
