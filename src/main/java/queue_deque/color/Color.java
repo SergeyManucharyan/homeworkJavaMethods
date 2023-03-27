@@ -1,5 +1,7 @@
 package queue_deque.color;
+
 import java.util.PriorityQueue;
+
 //12.Write a Java program to create a new priority queue, add some colors (string)
 //and print out the elements of the priority queue.
 public class Color {
@@ -13,7 +15,6 @@ public class Color {
         while (!color.isEmpty()) {
             System.out.println(color.peek());
         }
-        System.out.println(color.toString());
     }
 }
 
