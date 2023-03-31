@@ -13,8 +13,7 @@ public class Person {
 
     @Override
     public String toString() {
-        return "queue_deque.customobjectspriorityqueue.Person " +
-                "name= " + name +
+        return "name= " + name +
                 ", city= " + city +
                 ", id= "+job.getId()+
                 ", role " + job.getRole()+
